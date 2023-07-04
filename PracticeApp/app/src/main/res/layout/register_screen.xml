@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blood"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Bank"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#CD0505"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/nameRegister"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="14dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_style"
+        android:drawableRight="@drawable/email_icon"
+        android:drawableTint="#C10606"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/emailRegsiter"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="14dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_style"
+        android:drawableRight="@drawable/email_icon"
+        android:drawableTint="#C10606"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="14dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_style"
+        android:drawableRight="@drawable/password_icon"
+        android:drawableTint="#C10606"
+        android:id="@+id/passRegister"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/button_style2"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/signupBtn"
+        android:paddingVertical="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:id="@+id/gotoLogin"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
