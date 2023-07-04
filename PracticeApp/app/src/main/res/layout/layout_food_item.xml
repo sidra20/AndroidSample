@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#312951"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/food"
+                android:scaleType="centerCrop"
+                android:id="@+id/foodImage"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Burger"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/foodName"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="350gm"
+                android:textColor="#bbb"
+                android:textSize="14sp"
+                android:id="@+id/weight"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$300"
+                android:textColor="@color/white"
+                android:background="@drawable/roundeer_border"
+                android:textSize="14sp"
+                android:backgroundTint="#4F36AB"
+                android:id="@+id/price"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="12dp"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:background="@drawable/roundeer_border"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:backgroundTint="#4F36AB"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/deleteFood"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

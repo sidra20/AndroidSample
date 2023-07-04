@@ -35,7 +35,7 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".MainAct"/>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.FoodListActivity"
             android:exported="true"
             android:label="Practice App">
             <intent-filter>
