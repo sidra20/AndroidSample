@@ -5,18 +5,20 @@ public class Food {
     private String foodName;
     private String weight;
     private String price;
+    private String image;
 
-    public Food(int id, String foodName, String weight, String price){
-        this.id = id;
+//    public Food(int id, String foodName, String weight, String price){
+//        this.id = id;
+//        this.foodName = foodName;
+//        this.weight = weight;
+//        this.price = price;
+//    }
+
+    public Food( String foodName, String weight, String price, String image){
         this.foodName = foodName;
         this.weight = weight;
         this.price = price;
-    }
-
-    public Food( String foodName, String weight, String price){
-        this.foodName = foodName;
-        this.weight = weight;
-        this.price = price;
+        this.image = image;
     }
 
     public void setId(int id){
@@ -45,4 +47,11 @@ public class Food {
         return price;
     }
 
+    public void setImage(String image){
+        this.image = image;
+    }
+
+    public String getImage(){
+        return image;
+    }
 }
