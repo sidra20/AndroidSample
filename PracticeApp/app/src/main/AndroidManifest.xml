@@ -31,12 +31,14 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyArfdePfnmU-GRwlslL5tyMTp10Yw0fp-s"/>
 
+        <activity android:name=".activities.AddNoteActivity"/>
         <activity android:name=".SplashActivity"/>
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".MainAct"/>
         <activity android:name=".activities.AddUserActivity"/>
+        <activity android:name=".activities.EditNoteActivity"/>
         <activity
-            android:name=".activities.UsersListActivity"
+            android:name=".activities.NotesListActivity"
             android:exported="true"
             android:label="Practice App">
             <intent-filter>
